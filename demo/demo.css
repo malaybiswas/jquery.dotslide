@@ -1,0 +1,53 @@
+.demo-controls {
+	width: 40%;
+	left: 0;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	position: absolute;
+	height: 100%;
+	padding: 1%;
+	top: 0;
+	overflow: hidden;
+}
+.demo-controls * {
+	outline: none;
+	outline: 0;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+.demo-controls > .control-section > .controls {
+	margin-top: 1%;
+	font-size: 0.8em;
+	height: 65%;
+	overflow: scroll;
+}
+.demo-controls > .control-section > .controls div {
+	margin-bottom: 5px;
+}
+.demo-slideshow {
+	position: absolute;
+	height: 100%;
+	left: 42%;
+	width: 58%;
+	top: 0;
+}
+.dt {
+	display: table;
+	width: 100%;
+}
+.dtr {
+	display: table-row;
+}
+.dtc {
+	display: table-cell;
+	vertical-align: middle;
+	margin-bottom: 2px;
+}
+.slideshow-container {
+	width: 100%;
+	height: 100%;
+	margin: auto;
+}
+.small {
+	width: 45px;
+	height: 30px;
+}

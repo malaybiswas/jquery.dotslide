@@ -1,0 +1,120 @@
+<html>
+	<head>
+		<title>Dot Slide Demo</title>
+		<link rel='stylesheet' type='text/css' href='https://code.jquery.com/ui/1.11.1/themes/cupertino/jquery-ui.css'>
+		<link rel='stylesheet' type='text/css' href='../jquery.dotslide-0.0.1.min.css'>
+		<link rel='stylesheet' type='text/css' href='demo.css'>
+		<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js'></script>
+		<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js'></script>
+		<script type='text/javascript' src='../jquery.dotslide-0.0.1.min.js'></script>
+		<script type='text/javascript' src='demo.js'></script>
+	</head>
+	<body>
+		<div class='demo-controls ui-widget-content'>
+			<div class="control-section">
+				<h3>Initialize</h3>
+				<div class='controls'>
+					<div>Initial slides</div>
+					<div id='init-slides'>
+						<input type="checkbox" id="slide-1" data-url='./slides/art.jpg' data-caption='Art' /><label for="slide-1" class='init-slide' ><img class='small' src='./slides/art.jpg'></label>
+						<input type="checkbox" id="slide-2" data-url='./slides/classic.jpg' data-caption='Classic Car' /><label for="slide-2" class='init-slide' ><img class='small' src='./slides/classic.jpg'></label>
+						<input type="checkbox" id="slide-3" data-url='./slides/forgotten.jpg'  /><label for="slide-3" class='init-slide' ><img class='small' src='./slides/forgotten.jpg'></label>
+						<input type="checkbox" id="slide-4" data-url='./slides/geometry.jpg' data-caption='Once I was busy' data-layout='contain'/><label for="slide-4" class='init-slide' ><img class='small' src='./slides/geometry.jpg'></label>
+						<input type="checkbox" id="slide-5" data-url='./slides/honey.jpg' data-caption='Where are you honey?' /><label for="slide-5" class='init-slide' ><img class='small' src='./slides/honey.jpg'></label>
+						<input type="checkbox" id="slide-6" data-url='./slides/lady.jpg' data-caption="Who's that lady?" /><label for="slide-6" class='init-slide' ><img class='small' src='./slides/lady.jpg'></label>
+						<input type="checkbox" id="slide-7" data-url='./slides/littleman.jpg'  /><label for="slide-7" class='init-slide' ><img class='small' src='./slides/littleman.jpg'></label>
+						<input type="checkbox" id="slide-8" data-url='./slides/pink.jpg' data-caption='Forever yours' /><label for="slide-8" class='init-slide' ><img class='small' src='./slides/pink.jpg'></label>
+					</div>
+					<div>Default layout</div>
+					<div id='init-layout'>
+						<input type='radio' name='rl' id='rl-1' value='cover'/><label for='rl-1' class='init-layout'>Cover</label>
+						<input type='radio' name='rl' id='rl-2' value='contain'/><label for='rl-2' class='init-layout'>Contain</label>
+					</div>
+					<div>Transition effect</div>
+					<div id='init-transition'></div>
+					<div>Autoplay on load</div>
+					<div id='init-autoplay'>
+						<input type='checkbox' id='autoplay' value='true'/><label for='autoplay' class='init-autoplay'>Autoplay</label>
+					</div>
+					<div>Always apply transition effect (If not selected transition effects only apply while playing slideshow)</div>
+					<div id='init-transition-always'>
+						<input type='checkbox' id='transition-always' value='true'/><label for='transition-always' class='init-transition-always'>Always Transition</label>
+					</div>
+					<div>Track events on (Open Event Log to view tracked events)</div>
+					<div id='init-events'>
+						<input type="checkbox" id="ev-1" value='destroy'/><label for="ev-1" class='init-event'>Destroy</label>
+						<input type="checkbox" id="ev-2" value='load'/><label for="ev-2" class='init-event'>Load</label>
+						<input type="checkbox" id="ev-3" value='pause'/><label for="ev-3" class='init-event'>Pause</label>
+						<input type="checkbox" id="ev-4" value='play'/><label for="ev-4" class='init-event'>Play</label>
+						<input type="checkbox" id="ev-5" value='changeStart'/><label for="ev-5" class='init-event'>Slide Change Start</label>
+						<input type="checkbox" id="ev-6" value='changeEnd'/><label for="ev-6" class='init-event'>Slide Change End</label>
+						<input type="checkbox" id="ev-7" value='update'/><label for="ev-7" class='init-event'>Update</label>
+					</div>
+					<div>Delay between transition</div>
+					<div>
+						<input type='text' size='5' id='init-delay'/><label for='init-delay'> secs</label>
+					</div>
+					<div>Transition effect play time</div>
+					<div>
+						<input type='text' size='5' id='init-transit-time'/><label for='init-transit-time'> secs</label>
+					</div>
+					<div style='text-align: center;'>
+						<input type='button' id='init-dotslide' value='Initialize'/>
+					</div>
+					<div style='text-align: center;'>Drag the arrow on the bottom right corner of the screen to resize the slideshow and see it adapt.</div>
+				</div>
+				<h3>API</h3>
+				<div class='controls api'>
+					<h3>Add New Slide</h3>
+					<div>
+						<div>Programmatically add one or more slides.</div>
+						<div id='add-slides'>
+							<input type="checkbox" id="slide-9" data-url='./slides/pipe.jpg'/><label for="slide-9" class='add-slide' ><img class='small' src='./slides/pipe.jpg'></label>
+							<input type="checkbox" id="slide-10" data-url='./slides/ride.jpg' data-caption='Lonely rider'/><label for="slide-10" class='add-slide' ><img class='small' src='./slides/ride.jpg'></label>
+							<input type="checkbox" id="slide-11" data-url='./slides/stylish.jpg' data-layout='contain'/><label for="slide-11" class='add-slide' ><img class='small' src='./slides/stylish.jpg'></label>
+							<input type="checkbox" id="slide-12" data-url='./slides/type.jpg' data-caption='Cutting Edge' /><label for="slide-12" class='add-slide' ><img class='small' src='./slides/type.jpg'></label>
+							<input type="checkbox" id="slide-13" data-url='./slides/vespa.jpg' data-caption="Vespa" /><label for="slide-13" class='add-slide' ><img class='small' src='./slides/vespa.jpg'></label>
+							<input type="checkbox" id="slide-14" data-url='./slides/watch.jpg' data-caption='Forever yours' data-layout='cover'/><label for="slide-14" class='add-slide' ><img class='small' src='./slides/watch.jpg'></label>
+							<input type="checkbox" id="slide-15" data-url='./slides/yeew.jpg' data-caption='Yeew!'/><label for="slide-15" class='add-slide' ><img class='small' src='./slides/yeew.jpg'></label>
+						</div>
+						<div>Insert at [optional 0 based index] <input type='text' size='5' id='add-slide-index'/><label for='add-slide-index'></div>
+						<div>
+							<button id='api-add-slide'>Add</button>
+						</div>
+					</div>
+					<h3>Play/Pause</h3>
+					<div>
+						<div>Programmatically play and pause slideshow.</div>
+						<div id='api-play-pause'>
+							<input type='radio' name='playpause' id='api-play' value='play'/><label for='api-play' class='api-play-pause'>Play</label>
+							<input type='radio' name='playpause' id='api-pause' value='pause'/><label for='api-pause' class='api-play-pause'>Pause</label>
+						</div>
+					</div>
+					<h3>Get Information</h3>
+					<div>
+						<div>Get the current number of slides in the slideshow.</div>
+						<div><input type='button' id='api-slide-count' value='Get Slide Count'>&nbsp;<span id='slide-count'></span></div>
+						<div>Get the current slide information.</div>
+						<div>
+							<button id='api-current-slide'>Show Current Slide Info</button>
+						</div>
+						<div>Get the list of slides in the slideshow.</div>
+						<div>
+							<button id='api-slide-list'>Show All Slide Info</button>
+						</div>
+					</div>
+					<h3>Destroy</h3>
+					<div>
+						<div>Programmatically destroy DotSlide widget.</div>
+						<div><input type='button' id='api-destroy' value='Destroy'></div>
+					</div>
+				</div>
+				<h3>Event Log <input type='button' id='clear-event-log' value='Clear'/></h3>
+				<div class='controls event-log'></div>
+			</div>
+		</div>
+		<div class='demo-slideshow ui-widget-overlay'>
+			<div class='slideshow-container'></div>
+		</div>
+	</body>
+</html>
