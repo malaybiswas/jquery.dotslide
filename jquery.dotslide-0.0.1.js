@@ -15,7 +15,7 @@ function removeProgressIndicator(target) {
 
 function showProgressIndicator(target) {
 	target.append($('<div></div>').addClass('dotslide-component progress-bar')
-									.append($('<div></div>').addClass('dotslide-component wheel').html('&#9099;')));
+									.append($('<div></div>').addClass('dotslide-component wheel').html('&oplus;')));
 }
 
 (function($) {
