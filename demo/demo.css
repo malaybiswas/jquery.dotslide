@@ -41,3 +41,6 @@
 .tabs .controls {
 	font-size: 0.8em;
 }
+.tabs .tab {
+	min-height: 400px;
+}
