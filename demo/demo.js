@@ -1,9 +1,10 @@
 (function($) {
 	$(document).ready(function() {
-		// Initialize demo controls
-		$('.demo-controls > .control-section').accordion();
+		$('.tabs').tabs({
+			heightStyle: 'fill'
+		});
 		
-		/** Initialize init section **/
+		// Initialize config section
 		$('#init-slides, #init-layout, #init-autoplay, #init-transition-always, #init-events').buttonset();
 	
 		Object.keys(DotSlide.transitions).forEach(function(transition, index) {
@@ -112,10 +113,6 @@
 		$('#init-dotslide').trigger('click');
 		
 		//Initialize API controls
-		$('.controls.api').accordion({
-			heightStyle: 'content'
-		});
-		
 		$('#api-play-pause').buttonset();
 		$('.api-play-pause:eq(1)').trigger('click');
 		$('.api-play-pause').on('click tap', function(event) {
