@@ -1,0 +1,43 @@
+{
+    "name": "jquery.dotslide",
+    "title": "jQuery DotSlide Photo Slideshow Plugin",
+    "version": "0.0.1",
+    "description": "DotSlide is a jQuery Slideshow plugin for photos.",
+    "homepage": "http://malay.breecz.com/page/5/2/4/jQuery-DotSlide-Plugin",
+    "author":
+    {
+        "name": "Malay Biswas",
+        "email": "biswas.malay@gmail.com",
+        "url": "https://github.com/malaybiswas"
+    },
+    "repository":
+    {
+        "type": "git",
+        "url": "https://github.com/malaybiswas/jquery.dotslide.git"
+    },
+    "bugs": "https://github.com/malaybiswas/jquery.dotslide/issues",
+    "keywords":
+    [
+        "photo",
+        "slider",
+        "slideshow",
+        "jquery",
+        "plugin",
+        "responsive"
+    ],
+    "licenses":
+    [
+        {
+            "type": "MIT",
+            "url": "http://www.opensource.org/licenses/mit-license.php"
+        }
+    ],
+    "engines":
+    {
+        "node": "*"
+    },
+    "dependencies":
+    {
+        "jquery": ">=2.0.2"
+    }
+}
