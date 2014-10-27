@@ -12,8 +12,6 @@ DotSlide is a jquery slideshow plugin for photos. It does not require extensive 
 * Extensible - add your own effects
 * Supports most modern browsers and devices
 
-Read the full documentation at [http://malay.breecz.com/page/5/2/4/jQuery-DotSlide-Plugin](http://malay.breecz.com/page/5/2/4/jQuery-DotSlide-Plugin).
-
 #Checkout the [demo](http://malaybiswas.github.io/jquery.dotslide/)
 Play around with the options, API and events.
 
@@ -50,3 +48,6 @@ $('.dotslide-container').dotslide({
        ] 
 });
 ````
+#Documentation
+
+Read the full documentation at [http://malay.breecz.com/page/5/2/4/jQuery-DotSlide-Plugin](http://malay.breecz.com/page/5/2/4/jQuery-DotSlide-Plugin).
